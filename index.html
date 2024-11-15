@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Type your name below:</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="displayName()">Submit</button>
+    <h2 id="greeting"></h2>
+
+    <script>
+        function displayName() {
+            const name = document.getElementById('nameInput').value;
+            if (name) {
+                document.getElementById('greeting').textContent = `Hello, ${name}!`;
+            } else {
+                document.getElementById('greeting').textContent = "Please enter your name!";
+            }
+        }
+    </script>
+</body>
+</html>
