@@ -19,7 +19,8 @@ $(window).on('load', function () {
         }
     });
 
-    $grid.isotope({ filter: '.gadgets' });  // Only show "Clothing" items by default
+    // Set the default filter to .burger after Isotope is initialized
+    $grid.isotope({ filter: '.burger' });  // Only show "Clothing" items by default
 
     // Handle filter clicks
     $('.filters_menu li').click(function () {
