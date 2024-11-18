@@ -1,11 +1,5 @@
 // to get current year
-function getYear() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    document.querySelector("#displayYear").innerHTML = currentYear;
-}
 
-getYear();
 
 
 // isotope js
@@ -19,8 +13,7 @@ $(window).on('load', function () {
         }
     });
 
-    // Set the default filter to .burger after Isotope is initialized
-    $grid.isotope({ filter: '.burger' });  // Only show "Clothing" items by default
+    $grid.isotope({ filter: '.gadgets' });  // Only show "Clothing" items by default
 
     // Handle filter clicks
     $('.filters_menu li').click(function () {
