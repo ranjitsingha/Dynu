@@ -65,3 +65,31 @@ $(".client_owl-carousel").owlCarousel({
         }
     }
 });
+
+
+// Function to get the value of a query parameter
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Retrieve the product price and image URL from the query parameters
+const productprice = getQueryParam('productprice');
+const productimage1 = getQueryParam('productimage1');
+const productimage2 = getQueryParam('productimage2');
+const productimage3 = getQueryParam('productimage3');
+
+// Wait for the DOM content to load
+document.addEventListener('DOMContentLoaded', () => {
+  // Set the image source
+  const imageElement1 = document.getElementById('productimage1');
+  imageElement1.src = productimage1;
+  const imageElement2 = document.getElementById('productimage2');
+  imageElement2.src = productimage2;
+  const imageElement3 = document.getElementById('productimage3');
+  imageElement3.src = productimage3;
+
+  // Display the price
+  const priceElement = document.getElementById('productprice');
+  priceElement.textContent = `Rs ${productprice}`;
+});
