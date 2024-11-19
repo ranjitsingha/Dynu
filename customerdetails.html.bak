@@ -14,7 +14,7 @@
   <title> Dynu </title>
 </head>
 <body>
-   <div class="container">
+   <div class="container" style=color:#222831;>
    <iframe 
      src="https://docs.google.com/forms/d/e/1FAIpQLSfOvEekjf-vAuDDjYpr2O4gb9OT_i1CS-03dlgVIYl6TYY6yg/viewform?embedded=true" 
      frameborder="0" 
